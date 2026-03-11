@@ -3,8 +3,8 @@
 
 ## Unguided 
 
-### 1. [Soal]
-#### soal1.go
+### 1. [Soal 1]
+#### soal 1.go
 
 ```go
 package main
@@ -36,8 +36,8 @@ func main() {
 ![Screenshot Output Unguided 1_1](https://github.com/SukmaAdityaRafindra/Sukma-Aditya-Rafindra_109082500189/blob/main/Output/Cuplikan%20layar%202026-03-11%20233200.png)
 [penjelasan]
 
-### 2. [Soa2]
-#### soal2.go
+### 2. [Soal 2]
+#### soal 2.go
 
 ```go
 package main
@@ -62,12 +62,12 @@ func main() {
 ### Output Unguided :
 
 ##### Output 
-![Screenshot Output Unguided 1_1](https://github.com/SukmaAdityaRafindra/Sukma-Aditya-Rafindra_109082500189/blob/main/Output/Cuplikan%20layar%202026-03-11%20233200.png)
+![Screenshot Output Unguided 1_1](https://github.com/SukmaAdityaRafindra/Sukma-Aditya-Rafindra_109082500189/blob/main/Output/Cuplikan%20layar%202026-03-12%20000606.png)
 [penjelasan]
 
 
-### 3. [Soa3]
-#### soal3.go
+### 3. [Soal 3]
+#### soal 3.go
 
 ```go
 package main
