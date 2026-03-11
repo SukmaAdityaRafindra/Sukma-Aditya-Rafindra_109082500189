@@ -34,7 +34,7 @@ func main() {
 
 ##### Output 
 ![Screenshot Output Unguided 1_1](https://github.com/SukmaAdityaRafindra/Sukma-Aditya-Rafindra_109082500189/blob/main/Output/Cuplikan%20layar%202026-03-11%20233200.png)
-[penjelasan]
+berfungsi untuk menerima tiga input string dari pengguna, menampilkan urutan awalnya, kemudian menukar posisi ketiga string tersebut menggunakan variabel sementara (temp), lalu menampilkan hasil urutan akhirnya.
 
 ### 2. [Soal 2]
 #### soal 2.go
@@ -63,7 +63,7 @@ func main() {
 
 ##### Output 
 ![Screenshot Output Unguided 1_1](https://github.com/SukmaAdityaRafindra/Sukma-Aditya-Rafindra_109082500189/blob/main/Output/Cuplikan%20layar%202026-03-12%20000606.png)
-[penjelasan]
+berfungsi untuk melakukan 5 kali percobaan input empat kata, kemudian memeriksa apakah urutan kata yang dimasukkan adalah “merah kuning hijau ungu”, dan jika ada yang tidak sesuai maka nilai berhasil akan menjadi false, lalu hasil akhirnya ditampilkan.
 
 
 ### 3. [Soal 3]
@@ -105,5 +105,5 @@ func main() {
 ### Output Unguided :
 
 ##### Output 
-![Screenshot Output Unguided 1_1](https://github.com/SukmaAdityaRafindra/Sukma-Aditya-Rafindra_109082500189/blob/main/Output/Cuplikan%20layar%202026-03-11%20233200.png)
-[penjelasan]
+![Screenshot Output Unguided 1_1](https://github.com/SukmaAdityaRafindra/Sukma-Aditya-Rafindra_109082500189/blob/main/Output/Cuplikan%20layar%202026-03-12%20001841.png)
+berfungsi untuk menghitung total biaya pengiriman berdasarkan berat parsel yang dimasukkan dalam gram, dengan mengubahnya ke kilogram dan sisa gram, kemudian menentukan biaya tambahan dari sisa berat sebelum menampilkan detail berat dan total biaya pengiriman.
