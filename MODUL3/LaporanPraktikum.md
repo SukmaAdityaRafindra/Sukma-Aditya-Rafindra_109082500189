@@ -47,7 +47,7 @@ func main() {
 
 ##### Output 
 ![Screenshot Output Unguided 1_1](https://github.com/SukmaAdityaRafindra/Sukma-Aditya-Rafindra_109082500189/blob/main/MODUL3/Output/SOAL1_MODUL3.png)
-berfungsi untuk menerima tiga input string dari pengguna, menampilkan urutan awalnya, kemudian menukar posisi ketiga string tersebut menggunakan variabel sementara (temp), lalu menampilkan hasil urutan akhirnya.
+Program tersebut digunakan untuk membaca empat bilangan (a, b, c, d), lalu menghitung dan menampilkan hasil permutasi serta kombinasi dari a terhadap c dan b terhadap d dengan memanfaatkan fungsi faktorial.
 
 ### 2. [Soal 2]
 #### soal 2.go
@@ -89,7 +89,7 @@ func main() {
 
 ##### Output 
 ![Screenshot Output Unguided 1_1](https://github.com/SukmaAdityaRafindra/Sukma-Aditya-Rafindra_109082500189/blob/main/MODUL3/Output/SOAL2_MODUL3.png)
-berfungsi untuk melakukan 5 kali percobaan input empat kata, kemudian memeriksa apakah urutan kata yang dimasukkan adalah “merah kuning hijau ungu”, dan jika ada yang tidak sesuai maka nilai berhasil akan menjadi false, lalu hasil akhirnya ditampilkan.
+Program tersebut membaca tiga bilangan lalu menghitung dan menampilkan hasil komposisi fungsi f(g(h(a))), g(h(f(b))), dan h(f(g(c))) menggunakan fungsi matematika yang telah didefinisikan.
 
 
 ### 3. [Soal 3]
@@ -139,5 +139,5 @@ func main() {
 
 ##### Output 
 ![Screenshot Output Unguided 1_1](https://github.com/SukmaAdityaRafindra/Sukma-Aditya-Rafindra_109082500189/blob/main/MODUL3/Output/SOAL2_MODUL3.png)
-berfungsi untuk menghitung total biaya pengiriman berdasarkan berat parsel yang dimasukkan dalam gram, dengan mengubahnya ke kilogram dan sisa gram, kemudian menentukan biaya tambahan dari sisa berat sebelum menampilkan detail berat dan total biaya pengiriman.
+Program ini digunakan untuk menentukan posisi sebuah titik terhadap dua lingkaran dengan menghitung jaraknya dari pusat lingkaran dan membandingkannya dengan radius.
 
