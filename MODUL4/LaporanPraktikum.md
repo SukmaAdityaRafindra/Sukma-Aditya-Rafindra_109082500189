@@ -130,5 +130,6 @@ func main() {
 
 ##### Output 
 ![Screenshot Output Unguided 1_1](https://github.com/SukmaAdityaRafindra/Sukma-Aditya-Rafindra_109082500189/blob/main/MODUL4/Output/soal3_modul4.png)
+Program ini menampilkan urutan bilangan dari suatu angka dengan aturan: jika genap dibagi 2, jika ganjil dikali 3 lalu ditambah 1, hingga mencapai 1.
 
 
