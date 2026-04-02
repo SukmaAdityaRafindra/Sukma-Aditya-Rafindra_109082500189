@@ -13,41 +13,33 @@ package main
 import "fmt"
 
 func faktorial(n int) int {
-	hasil := 1
-	for i := n; i >= 1; i-- {
-		hasil = hasil * i
+	if n == 0 {
+		return 1
 	}
-	return hasil
-}
-
-func permutasi(n int, r int) int {
-	return faktorial(n) / faktorial(n-r)
-}
-
-func kombinasi(n int, r int) int {
-	return faktorial(n) / faktorial(r) * faktorial(n-r)
+	return n * faktorial(n-1)
 }
 
 func main() {
 	var a, b, c, d int
-
 	fmt.Scan(&a, &b, &c, &d)
 
-	p1 := permutasi(a, c)
-	k1 := kombinasi(a, c)
+	p1 := faktorial(a) / faktorial(a-c)
+	c1 := faktorial(a) / (faktorial(c) * faktorial(a-c))
 
-	p2 := permutasi(b, d)
-	k2 := kombinasi(b, d)
+	p2 := faktorial(b) / faktorial(b-d)
+	c2 := faktorial(b) / (faktorial(d) * faktorial(b-d))
 
-	fmt.Println(p1, k1)
-	fmt.Println(p2, k2)
+	fmt.Println(p1, c1)
+	fmt.Println(p2, c2)
 }
+
 ```
 ### Output Unguided :
 
 ##### Output 
-![Screenshot Output Unguided 1_1](https://github.com/SukmaAdityaRafindra/Sukma-Aditya-Rafindra_109082500189/blob/main/MODUL3/Output/SOAL1_MODUL3.png)
-Program tersebut digunakan untuk membaca empat bilangan (a, b, c, d), lalu menghitung dan menampilkan hasil permutasi serta kombinasi dari a terhadap c dan b terhadap d dengan memanfaatkan fungsi faktorial.
+![Screenshot Output Unguided 1_1](https://github.com/SukmaAdityaRafindra/Sukma-Aditya-Rafindra_109082500189/blob/main/MODUL4/Output/soal1_modul4.png)
+Program ini membaca beberapa input angka lalu menghitung nilai faktorialnya menggunakan fungsi rekursif dan menampilkan hasilnya di terminal.
+
 
 ### 2. [Soal 2]
 #### soal 2.go
@@ -57,39 +49,54 @@ package main
 
 import "fmt"
 
-func f(x int) int {
-	return x * x
-}
+func hitungSkor(soal, waktu_m *int) {
+	*waktu_m = 0
+	*soal = 0
+	var waktu int
+	for i := 1; i <= 8; i++ {
+		fmt.Scan(&waktu)
 
-func g(x int) int {
-	return x - 2
-}
-
-func h(x int) int {
-	return x + 1
+		if waktu < 301 {
+			*soal++
+			*waktu_m += waktu
+		}
+	}
 }
 
 func main() {
-	var a, b, c int
+	var nama, pemenang string
+	var soal, waktu int
+	cek := true
+	for {
+		fmt.Scan(&nama)
+		if nama == "Selesai" {
+			break
+		}
+		var banyaksoal, waktu_terdikit int
+		hitungSkor(&banyaksoal, &waktu_terdikit)
 
-	fmt.Scan(&a, &b, &c)
+		if cek {
+			soal = banyaksoal
+			waktu = waktu_terdikit
+			pemenang = nama
+			cek = false
+		} else if banyaksoal > soal || (soal == banyaksoal && waktu_terdikit < waktu) {
+			soal = banyaksoal
+			waktu = waktu_terdikit
+			pemenang = nama
+		}
+	}
 
-	hasil1 := f(g(h(a)))
-
-	hasil2 := g(h(f(b)))
-
-	hasil3 := h(f(g(c)))
-
-	fmt.Println(hasil1)
-	fmt.Println(hasil2)
-	fmt.Println(hasil3)
+	fmt.Println(pemenang, soal, waktu)
 }
+
 ```
 ### Output Unguided :
 
 ##### Output 
-![Screenshot Output Unguided 1_1](https://github.com/SukmaAdityaRafindra/Sukma-Aditya-Rafindra_109082500189/blob/main/MODUL3/Output/SOAL2_MODUL3.png)
-Program tersebut membaca tiga bilangan lalu menghitung dan menampilkan hasil komposisi fungsi f(g(h(a))), g(h(f(b))), dan h(f(g(c))) menggunakan fungsi matematika yang telah didefinisikan.
+![Screenshot Output Unguided 1_1](https://github.com/SukmaAdityaRafindra/Sukma-Aditya-Rafindra_109082500189/blob/main/MODUL4/Output/soal2_modul4.png)
+Program ini membaca data waktu pengerjaan soal sebanyak 8 kali, lalu menghitung berapa soal yang selesai dalam waktu kurang dari 301 detik sekaligus menjumlahkan total waktunya, kemudian menampilkan hasil akhirnya.
+
 
 
 ### 3. [Soal 3]
@@ -98,46 +105,30 @@ Program tersebut membaca tiga bilangan lalu menghitung dan menampilkan hasil kom
 ```go
 package main
 
-import (
-	"fmt"
-	"math"
-)
+import "fmt"
 
-func jarak(a, b, c, d float64) float64 {
-	return math.Sqrt(math.Pow((a-c), 2) + math.Pow((b-d), 2))
-}
-
-func didalam(cx, cy, r, x, y float64) bool {
-	return jarak(cx, cy, x, y) <= r
+func deret(n int) {
+	fmt.Printf("%d ", n)
+	for n != 1 && n > 0 {
+		if n%2 == 0 {
+			n = n / 2
+		} else {
+			n = 3*n + 1
+		}
+		fmt.Printf("%d ", n)
+	}
 }
 
 func main() {
-	var (
-		cx1, cy1, cx2, cy2, r1, r2 float64
-		x, y                       float64
-	)
-	fmt.Scan(&cx1, &cy1, &r1)
-	fmt.Scan(&cx2, &cy2, &r2)
-	fmt.Scan(&x, &y)
-
-	d1 := didalam(cx1, cy1, r1, x, y)
-	d2 := didalam(cx2, cy2, r2, x, y)
-
-	if d1 && d2 {
-		fmt.Print("titik didalam lingkaran 1 dan 2")
-	} else if d1 {
-		fmt.Print("titik didalam lingkaran 1")
-	} else if d2 {
-		fmt.Print("titik didalam lingkaran 2")
-	} else {
-		fmt.Print("titik diluar lingkaran 1 dan 2")
-	}
+	var n int
+	fmt.Scan(&n)
+	deret(n)
 }
 
 ```
 ### Output Unguided :
 
 ##### Output 
-![Screenshot Output Unguided 1_1](https://github.com/SukmaAdityaRafindra/Sukma-Aditya-Rafindra_109082500189/blob/main/MODUL3/Output/SOAL2_MODUL3.png)
-Program ini digunakan untuk menentukan posisi sebuah titik terhadap dua lingkaran dengan menghitung jaraknya dari pusat lingkaran dan membandingkannya dengan radius.
+![Screenshot Output Unguided 1_1](https://github.com/SukmaAdityaRafindra/Sukma-Aditya-Rafindra_109082500189/blob/main/MODUL4/Output/soal3_modul4.png)
+
 
