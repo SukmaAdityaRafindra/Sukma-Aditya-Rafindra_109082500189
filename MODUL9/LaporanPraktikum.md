@@ -256,6 +256,6 @@ func main() {
 ### Output Unguided :
 
 ##### Output 
-![Screenshot Output Unguided 1_1](https://github.com/SukmaAdityaRafindra/Sukma-Aditya-Rafindra_109082500189/blob/main/MODUL9/Output/soal3.png)
+![Screenshot Output Unguided 1_1](https://github.com/SukmaAdityaRafindra/Sukma-Aditya-Rafindra_109082500189/blob/main/MODUL9/Output/image copy 3.png)
 Program ini memproses input teks untuk membalikkan urutan karakternya dan mengecek apakah teks tersebut adalah palindrom (kata yang terbaca sama dari depan maupun belakang) setelah mengabaikan spasi.
 
